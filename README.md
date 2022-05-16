@@ -1,4 +1,4 @@
 # YuzuBlazor
 
-username: admin@admin.com
-pass: testtest123456789
+admin@admin.com  
+1234567890
