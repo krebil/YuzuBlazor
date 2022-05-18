@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuzu", "Yuzu\Yuzu.csproj", "{9365A4E4-71CB-432B-8104-0F4E11A44E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorExample.Shared", "BlazorExample.Shared\BlazorExample.Shared.csproj", "{35CE7491-DFB1-4B5E-BCC7-5A0122335036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorExample.Components", "BlazorExample.Components\BlazorExample.Components.csproj", "{35B65D05-8177-4F9E-B8D3-D18CE6F36BD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9365A4E4-71CB-432B-8104-0F4E11A44E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9365A4E4-71CB-432B-8104-0F4E11A44E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9365A4E4-71CB-432B-8104-0F4E11A44E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9365A4E4-71CB-432B-8104-0F4E11A44E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35CE7491-DFB1-4B5E-BCC7-5A0122335036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CE7491-DFB1-4B5E-BCC7-5A0122335036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CE7491-DFB1-4B5E-BCC7-5A0122335036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CE7491-DFB1-4B5E-BCC7-5A0122335036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B65D05-8177-4F9E-B8D3-D18CE6F36BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B65D05-8177-4F9E-B8D3-D18CE6F36BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B65D05-8177-4F9E-B8D3-D18CE6F36BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B65D05-8177-4F9E-B8D3-D18CE6F36BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

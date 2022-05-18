@@ -1,0 +1,20 @@
+{
+  "models": {
+    "vmBlock_Grouped": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GroupStoreContentAs, YuzuDelivery.Import",
+        "parentPropertyName": "Grouped",
+        "parentPropertyType": "vmPage_Transmuted",
+        "type": 2,
+        "groupName": "Grouped"
+      },
+      "documentTypeAlias": "transmuted",
+      "properties": {
+        "String": "bd85518a-0d1f-470a-95de-888efdfddc2a"
+      }
+    }
+  },
+  "ignoreViewmodels": [],
+  "ignoreViewmodelProperties": [],
+  "manualMappers": []
+}

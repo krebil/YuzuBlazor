@@ -1,0 +1,266 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\repos\\yuzu\\YuzuBlazor\\Yuzu\\Yuzu.csproj": {}
+  },
+  "projects": {
+    "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Components\\BlazorExample.Components.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Components\\BlazorExample.Components.csproj",
+        "projectName": "BlazorExample.Components",
+        "projectPath": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Components\\BlazorExample.Components.csproj",
+        "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Components\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Shared\\BlazorExample.Shared.csproj": {
+                "projectPath": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Shared\\BlazorExample.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.CustomElements": {
+              "target": "Package",
+              "version": "[0.1.0-alpha.21466.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "TweetinviAPI": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Umbraco.Cms.Core": {
+              "target": "Package",
+              "version": "[9.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.2, 6.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Shared\\BlazorExample.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Shared\\BlazorExample.Shared.csproj",
+        "projectName": "BlazorExample.Shared",
+        "projectPath": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Shared\\BlazorExample.Shared.csproj",
+        "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "TweetinviAPI": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Umbraco.Cms.Core": {
+              "target": "Package",
+              "version": "[9.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repos\\yuzu\\YuzuBlazor\\Yuzu\\Yuzu.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\yuzu\\YuzuBlazor\\Yuzu\\Yuzu.csproj",
+        "projectName": "Yuzu",
+        "projectPath": "C:\\repos\\yuzu\\YuzuBlazor\\Yuzu\\Yuzu.csproj",
+        "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\yuzu\\YuzuBlazor\\Yuzu\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Components\\BlazorExample.Components.csproj": {
+                "projectPath": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Components\\BlazorExample.Components.csproj"
+              },
+              "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Shared\\BlazorExample.Shared.csproj": {
+                "projectPath": "C:\\repos\\yuzu\\YuzuBlazor\\BlazorExample.Shared\\BlazorExample.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.CustomElements": {
+              "target": "Package",
+              "version": "[0.1.0-alpha.21466.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.ICU.ICU4C.Runtime": {
+              "target": "Package",
+              "version": "[68.2.0.9, )"
+            },
+            "Umbraco.Cms": {
+              "target": "Package",
+              "version": "[9.5.0, )"
+            },
+            "Umbraco.Forms": {
+              "target": "Package",
+              "version": "[9.4.1, )"
+            },
+            "YuzuDelivery.Umbraco.BlockList": {
+              "target": "Package",
+              "version": "[2.0.21, )"
+            },
+            "YuzuDelivery.Umbraco.QuickStart.Example.TestProject": {
+              "target": "Package",
+              "version": "[2.0.21, )"
+            },
+            "YuzuDelivery.Umbraco.Quickstart": {
+              "target": "Package",
+              "version": "[2.0.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

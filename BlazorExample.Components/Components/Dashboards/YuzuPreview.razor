@@ -1,0 +1,84 @@
+﻿@using BlazorExample.Shared.Models
+@using Umbraco.Cms.Core.Services
+@using Umbraco.Cms.Core.Web
+@using System.Diagnostics
+@using Newtonsoft.Json
+<div class="tw-p-2 tw-border tw-rounded tw-space-y-3">
+
+    <h1>
+        I am a blazor component
+    </h1>
+
+    @if (!string.IsNullOrWhiteSpace(Preview))
+    {
+        @((MarkupString) Preview)
+    }
+    else
+    {
+        <p>
+            Loading...
+        </p>
+    }
+</div>
+
+@code {
+
+    [Inject]
+    public HttpClient HttpClient { get; set; }
+
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+
+
+    [Parameter]
+    public string Content { get; set; } = "";
+
+    [Parameter]
+    public string Key { get; set; } = "";
+
+
+    private string BaseUri { get; set; } = "";
+
+    private string Preview { get; set; } = "";
+
+    private bool IsInitialized { get; set; } = false;
+
+    protected override void OnInitialized()
+    {
+        BaseUri = NavigationManager.BaseUri;
+        if (BaseUri.Contains("umbraco"))
+        {
+            BaseUri = BaseUri.Replace("umbraco/", string.Empty);
+        }
+
+        IsInitialized = true;
+        LoadPreview();
+    }
+
+    public override Task SetParametersAsync(ParameterView parameters)
+    {
+        if (!IsInitialized)
+            return base.SetParametersAsync(parameters);
+        LoadPreview();
+        return base.SetParametersAsync(parameters);
+    }
+
+    private async void LoadPreview()
+    {
+        var formContent = new FormUrlEncodedContent(new[]
+        {
+            new KeyValuePair<string, string>("data.ContentTypeKey", Key),
+            new KeyValuePair<string, string>("data.Content", Content)
+        });
+        var responseMessage = await HttpClient.PostAsync($"{BaseUri}Api/BlazorBlockListPreview/GetPartialData", formContent);
+        if (!responseMessage.IsSuccessStatusCode) return;
+        var responseObject = await responseMessage.Content.ReadFromJsonAsync<PreviewReturn>();
+        if (responseObject != null && !string.IsNullOrEmpty(responseObject.Preview))
+        {
+            Preview = responseObject.Preview;
+        }
+
+        StateHasChanged();
+    }
+
+}

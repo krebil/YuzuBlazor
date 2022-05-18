@@ -1,0 +1,8 @@
+{
+	"css": [
+		"~/App_Plugins/YuzuBlockListBlazor/GridSection.css"
+	],
+	"javascript": [
+		"~/App_Plugins/YuzuBlockListBlazor/GridContentItemBlazor.js"
+	]
+}
